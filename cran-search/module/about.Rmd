@@ -1,0 +1,39 @@
+## `r fontawesome::fa("fas fa-house-user", fill = "steelblue")` About {- .tabset .tabset-pills}
+
+### Overview {-}
+
+The **`CRAN search`** project is to perform package search available in the Comprehensive R Archive Network (CRAN) repositorio for programming language R. The collected data is obtained by the **`tools::CRAN_package_db()`** and selected only a few columns to perform the search of the theme of interest.
+
+In the following table, you can check a brief structure of the data frame collected from the packages available in CRAN as number of rows and the frequency of words greater than 3 characters for the *title*, *description*, and *license* columns. An in-depth investigation of the data is at the discretion of the reader.
+
+``` {r}
+knitr::kable(df_join)
+```
+
+### Author {-}
+
+##### Author {-}
+
+``` {r}
+knitr::kable(
+    data.frame(
+        name = c("author", "website", "github"),
+        contact = c(
+            "Bruno Faria",
+            "https://brunofariadf.github.io/",
+            "https://github.com/brunofariadf/"
+        ),
+    check.names = FALSE))
+```
+
+##### Project {-}
+
+- cran-search
+
+##### Review {-}
+
+- News
+
+##### License {-}
+
+- MIT

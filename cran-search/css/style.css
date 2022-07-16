@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body { 
+  font-family: 'Raleway', sans-serif;
+  margin: auto;
+}
+
+/* ------------------------------------------------------- */
+/* -- CONTENT                                           -- */
+/* ------------------------------------------------------- */
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 4vmin;
+  color: gray;
+  border-bottom: 2px solid white;
+  margin: auto;
+  top:60px;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3vmin;
+  color: #0489B1;
+  border-bottom: 3px solid #4682B4;
+  top:60px;
+}
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 4vmin;
+  color: #0489B1;
+}
+
+h4 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.2vmin;
+  color: white;
+  text-shadow: 2px 2px #4682B4;
+}
+
+h5 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3vmin;
+  color: #0489B1;
+  border-bottom: 3px solid #4682B4;
+  top:60px;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: justify;
+  text-indent: 50px;
+  color: black;
+}
+
+/* ------------------------------------------------------- */
+/* -- TABLE AND IMAGE                                   -- */
+/* ------------------------------------------------------- */
+
+table {
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+th {
+    background-color: #00CED1;
+    color: #4682B4;
+    font-weight: normal;
+    padding:5px 0;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #DCDCDC;
+  }
+
+td{
+  text-align:left;
+  padding:5px 0;
+  border-bottom: 1px solid #DCDCDC;
+}
+
+tbody tr:hover{
+  background:#87CEEB;
+  color:black;
+  font-weight: bold;
+}
+
+.up{
+  cursor:pointer;
+}
+
+img {
+  width: 80%;
+}
+
+/* ------------------------------------------------------- */
+/* -- HEADER                                            -- */
+/* ------------------------------------------------------- */
+
+#header {
+  color: black;
+  min-height: 20px;
+  /* position: fixed; */
+  /* position: auto; */
+  width: 100%;
+  text-indent: 25px;
+  overflow: auto;
+  top: 0;
+  right: 1;
+  left: 0;
+  border-bottom: 1px solid #4682B4;
+  background: rgb(76,69,190);
+  background: linear-gradient(90deg, rgba(76,69,190,1) 0%, rgba(114,114,181,1) 0%, rgba(199,230,236,1) 100%);
+  z-index: 9;
+}
+
+h1.title {
+  text-align:left;
+  font-size: 38px;
+  border-bottom: 0px solid #4682B4;
+  color: #D8BFD8;
+  text-shadow: 2px 2px #4682B4;
+}
+
+#General {
+  background-size: contain;
+  padding-top: 80px !important;
+  margin: 0;
+  padding: 0;
+}
+
+#TOC {
+  background-size: contain;
+  padding-top: 80px !important;
+}
+

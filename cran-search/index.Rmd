@@ -1,0 +1,29 @@
+---
+title: "CRAN Search to R Package"
+author: "published in: 2022-07-15 | last update in: `r date_cran` | version: 1.0.0.9000"
+output:
+  html_document:
+    highlight: tango
+    section_divs: TRUE
+    #theme: default
+    toc: FALSE
+    toc_float: FALSE
+    number_sections: FALSE
+    smart: FALSE
+    include:
+      after_body: "layout/footer.html"
+      in_header: "layout/favicon.html"
+    css: "css/style.css"
+---
+
+<!-- setup to Rmd -->
+
+``` {r child="module/00-setup.Rmd"}
+```
+
+<!-- construct page -->
+
+# {- .tabset .tabset-fade}
+
+``` {r echo=FALSE, child="module/01-home.Rmd"}
+```

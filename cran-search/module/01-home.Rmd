@@ -1,0 +1,9 @@
+<!-- read the search -->
+
+``` {r child="search.Rmd"}
+```
+
+<!-- read about -->
+
+``` {r child="about.Rmd"}
+```

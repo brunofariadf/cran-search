@@ -1,0 +1,4 @@
+```{r setup, echo=FALSE}
+# configure option general for rmarkdown
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, eval = TRUE)
+```
