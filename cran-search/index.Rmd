@@ -1,6 +1,6 @@
 ---
 title: "CRAN Search to R Package"
-author: "published in: 2022-07-15 | last update in: `r date_cran` | version: 1.0.0.9000"
+author: "published in: 2022-07-15 | last update in: `r date_cran` | version: 1.1.2.9000"
 output:
   html_document:
     highlight: tango
