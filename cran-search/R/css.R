@@ -24,16 +24,31 @@
 # not export
 
 .dt_style <- function(data) {
-  DT::datatable(data, filter = "top", extensions = 'Buttons',
+  DT::datatable(data, filter = "top", 
+          extensions = c('Buttons'),
           options = list(
             dom = 'Bfrtip',
+            # buttons = list('copy', list(
+            #   extend = 'collection',
+            #   buttons = c('csv', 'excel', 'pdf'),
+            #   text = 'Download'),
+            #   I('colvis')),
             buttons = list('copy', list(
               extend = 'collection',
-              buttons = c('csv', 'excel', 'pdf'),
-              text = 'Download')),
+              buttons = list(
+                list(extend = 'csv', exportOptions = list(columns = ":visible")), 
+                list(extend = 'excel', exportOptions = list(columns = ":visible")), 
+                list(
+                  extend = 'pdf', 
+                  orientation = "landscape",
+                  exportOptions = list(columns = ":visible")
+                  )
+                ),
+              text = 'Download'),
+              I('colvis')),
             scrollX = TRUE,
             scrollY = 300,
-            pageLength = 5,
+            pageLength = 10,
             scroller = list(rowHeight = 5),
             columnDefs = list(list(
               className = 'dt-center', 
