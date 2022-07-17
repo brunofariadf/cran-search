@@ -13,8 +13,13 @@ This is a basic example that shows how to use the page to Windows.
 
 - R
 ``` r
+# to restore the state of your project from renv.lock.
 renv::restore()
-source("../cran-search/statistic/01-process")
+
+# start the process to construct page
+source("./cran-search/statistic/01-process.R")
+
+# open page in browser
 browseURL(file.path(getwd(), "index.html"))
 ```
 
@@ -26,4 +31,4 @@ Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). By 
 
 # License
 
-MIT
+[MIT](https://github.com/brunofariadf/cran-search/blob/main/LICENSE)

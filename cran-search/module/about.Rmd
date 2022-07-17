@@ -28,12 +28,12 @@ knitr::kable(
 
 ##### Project {-}
 
-- cran-search
+- [cran-search](https://github.com/brunofariadf/cran-search)
 
 ##### Review {-}
 
-- News
+- [News](https://github.com/brunofariadf/cran-search/blob/main/NEWS.md)
 
 ##### License {-}
 
-- MIT
+- [MIT](https://github.com/brunofariadf/cran-search/blob/main/LICENSE)

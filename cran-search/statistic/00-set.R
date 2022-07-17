@@ -21,6 +21,7 @@
 path_index <- getwd()
 path_cran <- "./cran-search/data-raw/cran.csv"
 path_rmd <- "./cran-search/index.Rmd"
+path_describe <- "./cran-search/data/describe.rda"
 
 # get CRAN: TRUE; read csv: FALSE
 set_cran <- TRUE
