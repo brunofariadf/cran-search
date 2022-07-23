@@ -26,14 +26,14 @@
         if (type == "basic") {
             data.frame(update = Sys.Date(),
                 package = db[["Package"]],
-                maintainer = if(format_column) .format_character_length(db[["Maintainer"]]) else db[["Maintainer"]],
+                version = db[["Version"]],
                 license = db[["License"]],
-                package_title = if (format_column) .format_character_length(db[["Title"]]) else db[["Title"]],
+                title = if (format_column) .format_character_length(db[["Title"]]) else db[["Title"]],
                 description = if (format_column) .format_character_length(db[["Description"]]) else db[["Description"]],
                 date = db[["Published"]],
-                version = db[["Version"]],
                 depends = if (format_column) .format_character_length(db[["Depends"]]) else db[["Depends"]],
                 import = if (format_column) .format_character_length(db[["Imports"]]) else db[["Imports"]],
+                url = if(format_column) .format_character_length(db[["URL"]]) else db[["URL"]],
                 check.names = FALSE)
         } else if (type == "all") {
             return(db)

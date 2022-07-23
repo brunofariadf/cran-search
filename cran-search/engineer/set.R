@@ -42,8 +42,8 @@ date_cran <- unique(df_cran[["update"]])
 
 # title column
 df_title <- df_cran |>
-    dplyr::select(package_title) |> 
-    tidytext::unnest_tokens(word, package_title) |> 
+    dplyr::select(title) |> 
+    tidytext::unnest_tokens(word, title) |> 
     dplyr::mutate(n_char = nchar(word)) |> 
     dplyr::filter(n_char > 3) |> 
     dplyr::group_by(word) |> 

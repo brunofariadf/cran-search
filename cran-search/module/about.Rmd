@@ -2,7 +2,7 @@
 
 ### Overview {-}
 
-The **`CRAN search`** project is to perform package search available in the Comprehensive R Archive Network (CRAN) repositorio for programming language R. The collected data is obtained by the **`tools::CRAN_package_db()`** and selected only a few columns to perform the search of the theme of interest.
+The **`CRAN search`** project is to perform package search available in the Comprehensive R Archive Network (CRAN) repository for programming language R. The collected data is obtained by the **`tools::CRAN_package_db()`** and selected only a few columns to perform the search of the theme of interest.
 
 In the following table, you can check a brief structure of the data frame collected from the packages available in CRAN as number of rows and the frequency of words greater than 3 characters for the *title*, *description*, and *license* columns. An in-depth investigation of the data is at the discretion of the reader.
 
@@ -28,7 +28,19 @@ knitr::kable(
 
 ##### Project {-}
 
-- [cran-search](https://github.com/brunofariadf/cran-search)
+``` {r}
+knitr::kable(
+    data.frame(
+        name = c("main", "review", "license"),
+        contact = c(
+            "https://github.com/brunofariadf/cran-search",
+            "https://github.com/brunofariadf/cran-search/blob/main/NEWS.md",
+            "https://github.com/brunofariadf/cran-search/blob/main/LICENSE"
+        ),
+    check.names = FALSE))
+```
+
+<!-- - [cran-search](https://github.com/brunofariadf/cran-search)
 
 ##### Review {-}
 
@@ -36,4 +48,4 @@ knitr::kable(
 
 ##### License {-}
 
-- [MIT](https://github.com/brunofariadf/cran-search/blob/main/LICENSE)
+- [MIT](https://github.com/brunofariadf/cran-search/blob/main/LICENSE) -->

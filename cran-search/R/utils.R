@@ -36,3 +36,12 @@
     check.names = FALSE
   )
 }
+
+# load function
+# not export
+
+.loadR <- function() {
+  path_i <- list.files(file.path("cran-search", "R"), full.names = TRUE)
+  path_i <- suppressWarnings(normalizePath(path_i))
+  invisible(lapply(path_i, source))
+}

@@ -1,8 +1,8 @@
 ## ------------------------------------------
 ##                          Date: 2022-07-16
 ## ------------------------------------------
-## Project: 
-## Author: 
+## Project: cran-search
+## Author: Bruno Faria
 ## 
 ## GUI: vscode (1.69.1)
 ## Version R: 4.1.0
@@ -13,15 +13,13 @@
 ## import function - date: 2022-07-16 18:16:44
 ## --------------------------------------------------------------------------------
 
-path_i <- list.files(normalizePath("./cran-search/R"), full.names = TRUE)
-path_i <- suppressWarnings(normalizePath(path_i))
-invisible(lapply(path_i, source))
+.loadR()
 
 ## --------------------------------------------------------------------------------
 ## set variable - date: 2022-07-16 18:31:12
 ## --------------------------------------------------------------------------------
 
-source(normalizePath("./cran-search/statistic/00-set.R"))
+source(file.path("cran-search","engineer","set.R"))
 
 ## --------------------------------------------------------------------------------
 ## start process - date: 2022-07-16 18:19:37

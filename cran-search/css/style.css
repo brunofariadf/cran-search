@@ -117,10 +117,32 @@ img {
   z-index: 9;
 }
 
-h1.title {
+/* h1.title {
   text-align:left;
   font-size: 38px;
   border-bottom: 0px solid #4682B4;
+  color: #D8BFD8;
+  text-shadow: 2px 2px #4682B4;
+} */
+
+h1.title {
+  font-family: 'Impact', sans-serif;
+  text-align:left;
+  font-size: 40px;
+  /* font-size: 25px; */
+  border-bottom: 0px solid #4682B4;
+  margin-bottom: 0;
+  color: #975597;
+  text-shadow: 2px 2px #4682B4;
+}
+
+h3.subtitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  text-align: left;
+  border-bottom: 0px solid #4682B4;
+  margin:0px;
+  padding:0px;
   color: #D8BFD8;
   text-shadow: 2px 2px #4682B4;
 }

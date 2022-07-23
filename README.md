@@ -5,7 +5,7 @@ development](https://img.shields.io/badge/status-development-blue)
 
 # Overview
 
-The **`CRAN search`** project is to perform package search available in the Comprehensive R Archive Network (CRAN) repositorio for programming language R. The collected data is obtained by the **`tools::CRAN_package_db()`** and selected only a few columns to perform the search of the theme of interest.
+The **`CRAN search`** project is to perform package search available in the Comprehensive R Archive Network (CRAN) repository for programming language R. The collected data is obtained by the **`tools::CRAN_package_db()`** and selected only a few columns to perform the search of the theme of interest.
 
 # Usage
 
@@ -17,7 +17,7 @@ This is a basic example that shows how to use the page to Windows.
 renv::restore()
 
 # start the process to construct page
-source("./cran-search/statistic/01-process.R")
+source(file.path("cran-search", "engineer","build.R"))
 
 # open page in browser
 browseURL(file.path(getwd(), "index.html"))
