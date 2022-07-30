@@ -18,7 +18,7 @@ knitr::kable(df_join)
 knitr::kable(
     data.frame(
         name = c("author", "website", "github"),
-        contact = c(
+        url = c(
             "Bruno Faria",
             "https://brunofariadf.github.io/",
             "https://github.com/brunofariadf/"
@@ -32,10 +32,10 @@ knitr::kable(
 knitr::kable(
     data.frame(
         name = c("main", "review", "license"),
-        contact = c(
-            "https://github.com/brunofariadf/cran-search",
-            "https://github.com/brunofariadf/cran-search/blob/main/NEWS.md",
-            "https://github.com/brunofariadf/cran-search/blob/main/LICENSE"
+        url = c(
+            "[cran-search](https://github.com/brunofariadf/cran-search)",
+            "[News](https://github.com/brunofariadf/cran-search/blob/main/NEWS.md)",
+            "[MIT](https://github.com/brunofariadf/cran-search/blob/main/LICENSE)"
         ),
     check.names = FALSE))
 ```
