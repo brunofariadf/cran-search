@@ -106,4 +106,4 @@ df_join <- rbind(
 ## export - date: 2022-07-16 18:11:51
 ## --------------------------------------------------------------------------------
 
-.write_cran(set_cran, path_cran); save(df_join, file = path_describe)
+# .write_cran(set_cran, path_cran); save(df_join, file = path_describe)
