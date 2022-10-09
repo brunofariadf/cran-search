@@ -2,9 +2,9 @@
 
 ### Overview {-}
 
-The **`CRAN search`** project is to perform package search available in the Comprehensive R Archive Network (CRAN) repository for programming language R. The collected data is obtained by the **`tools::CRAN_package_db()`** and selected only a few columns to perform the search of the theme of interest.
+The **`cran-search`** project aims to provide a database to perform a package search for the R programming language in the Comprehensive R Archive Network (CRAN) repository. The collected data are obtained by the tools::CRAN_package_db() function and selected only a few columns to perform the search for the topic of interest.
 
-In the following table, you can check a brief structure of the data frame collected from the packages available in CRAN as number of rows and the frequency of words greater than 3 characters for the *title*, *description*, and *license* columns. An in-depth investigation of the data is at the discretion of the reader.
+In the following table, it is possible to verify a brief structure of the data frame collected with packages available in CRAN. For example, the number of rows and columns, and the frequency of words longer than 3 or 4 characters for the column named *title*, *description*, and *license*. A depth investigation of the data is at the discretion of the reader.
 
 ``` {r}
 knitr::kable(df_join)

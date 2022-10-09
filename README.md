@@ -5,7 +5,7 @@ development](https://img.shields.io/badge/status-development-blue)
 
 # Overview
 
-The **`CRAN search`** project is to perform package search available in the Comprehensive R Archive Network (CRAN) repository for programming language R. The collected data is obtained by the **`tools::CRAN_package_db()`** and selected only a few columns to perform the search of the theme of interest.
+The **`cran-search`** project aims to provide a database to perform a package search for the R programming language in the Comprehensive R Archive Network (CRAN) repository. The collected data are obtained by the tools::CRAN_package_db() function and selected only a few columns to perform the search for the topic of interest.
 
 # Usage
 
