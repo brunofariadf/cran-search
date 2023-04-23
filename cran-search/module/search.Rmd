@@ -1,4 +1,4 @@
-## `r fontawesome::fa("fas fa-search", fill = "steelblue")` Search {- .tabset .tabset-pills}
+## `r fontawesome::fa("search", fill = "steelblue")` Search {- .tabset .tabset-pills}
 
 ``` {r}
 .dt_table(df_cran)
